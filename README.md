@@ -1,1 +1,1 @@
-# Sum-of-two-number
+# Sum of two number
