@@ -1,0 +1,430 @@
+																LAB PROGRAMS
+  
+#include <stdio.h>
+void main()
+{
+    int a,b,angle;
+    printf("enter two angles of a triangle");
+    scanf("%d%d",&a,&b);
+    angle=180-(a+b);
+    printf("a=%d\n b=%d\n angle=%d",a,b,angle);
+}
+
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+int main()
+{
+    int number;
+    int root;
+    printf("enter number\n");
+    scanf("%d",&number);
+    root= sqrt(number);
+    printf("square root of %d=%d",number,root);
+    return 0;
+}
+
+
+#include <stdio.h>
+void main()
+{
+    int a,b,c,d,e,total,average,percentage,outof=150;
+    printf("enter the marks of different subjects");
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+    total=a+b+c+d+e;
+    average=a+b+c+d+e/5;
+    percentage=(total*100)/outof;
+    printf("a=%d\n b=%d\n c=%d\n d=%d\n e=%d\n total=%d average=%d percentage=%d",a,b,c,d,e,total,average,percentage);
+}
+
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+    int x,y;
+    float p;
+    printf("find power of any number\n");
+    scanf("%d%d",&x,&y);
+    p=pow(x,y);
+    printf("%f",p);
+    return 0;
+}
+
+#include<stdio.h>
+main()
+{
+    int a;
+    float b;
+    double c;
+    char d;
+    printf("size of int=%d bytes\n",sizeof(a));
+    printf("size of int=%d bytes\n",sizeof(b));
+    printf("size of int=%d bytes\n",sizeof(c));
+    printf("size of int=%d bytes\n",sizeof(d));
+}
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float p,r,t,ci;
+    printf("enter principal");
+    scanf("%f",&p);
+    printf("enter rate");
+    scanf("%f",&r);
+    printf("enter time");
+    scanf("%f",&t);
+    ci=p*pow((1+r/100),t);
+    printf("compound interest%f",ci);
+}
+
+#include <stdio.h>
+int main()
+{
+int num1,num2;
+scanf("%d%d",&num1,&num2);
+if(num1>num2)
+{
+    printf("%d is greater",num1);
+}
+else
+{
+    printf("%d is greater",num2);
+}
+}
+
+#include <stdio.h>
+int main()
+{
+int n1,n2,n3;
+scanf("%d%d%d",&n1,&n2,&n3);
+if(n1>=n2 && n1>=n3)
+{
+    printf("%d is greater",n1);
+}
+else if(n2>=n1 && n2>=n3)
+{
+    printf("%d is greater",n2);
+}
+else
+{
+    printf("%d is the greater number",n3);
+}
+}
+
+#include <stdio.h>
+int main()
+{
+int num;
+scanf("%d",&num);
+if(num%2==0)
+{
+    printf("even no.");
+}
+else
+{
+    printf("odd no.");
+}
+}
+
+#include <stdio.h>
+int main()
+{
+int year;
+scanf("%d",&year);
+if(year%4==0)
+{
+    printf("leap year.");
+}
+else
+{
+    printf("not a leap year.");
+}
+}
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("enter a character");
+    scanf("%c",&ch);
+    if(ch>='a' && ch<='z'){
+        printf(" alphabet");
+    }
+    else
+    {
+       printf(" not a alphabet"); 
+    }
+}
+
+#include <stdio.h>
+void main()
+{
+   int days,year,week,day;
+   printf("enter days");
+   scanf("%d",&days);
+   year=(days/365);
+   week=(days%365)/7;
+   day=days-((year*365)+(week*7));
+   printf("\n%d",year);
+   printf("\n%d",week);
+   printf("\n%d",day);
+}
+
+#include <stdio.h>
+int main()
+{
+int num;
+scanf("%d",&num);
+if (num>0)
+{
+    printf("number is positive");
+}
+else if (num<0)
+{
+    printf("number is negative");
+}
+else
+{
+    printf("number is zero");
+}
+}
+
+#include <stdio.h>
+int main()
+{
+int num;
+scanf("%d",&num);
+if (num%5==0)
+{
+    printf("number is divisible by 5");
+}
+else if (num%11==0)
+{
+    printf("number is divisible by 11");
+}
+}
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+    {
+        printf("character is vowel");
+    }
+    else
+    {
+        printf("character is consonant");
+    }
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    if((ch>='a'&&ch<='z')||(ch>='A'&& ch<='Z'))
+    {
+        printf("%c is alphabet",ch);
+    }
+    else if(ch>='0'&&ch<='9')
+    {
+        printf("%c is digit",ch);
+    }
+    else
+    {
+        printf("%c is special character",ch);
+    }
+    return 0;
+}
+ 
+SWITCH PROGRAMS
+
+#include <stdio.h>
+int main()
+{
+    int ch;
+    printf("enter user choice");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:printf("monday");
+                break;
+        case 2:printf("tuesday");
+                break;
+        case 3:printf("wednesday");
+                break;
+        case 4:printf("thursday");
+                break;
+        case 5:printf("friday");
+                break;
+        case 6:printf("saturday");
+                break;
+        case 7:printf("sunday");
+                break;
+        default: printf("invalid user choice");
+    }
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+    int month;
+    printf("enter a month");
+    scanf("%d",&month);
+    switch(month)
+    {
+        case 1:printf("31 days in january");
+                break;
+        case 2:printf("28 days in februray");
+                break;
+        case 3:printf("31 days in march");
+                break;
+        case 4:printf("30 days in april");
+                break;
+        case 5:printf("31 days in may");
+                break;
+        case 6:printf("30 days in june");
+                break;
+        case 7:printf("31 days in july");
+                break;
+        case 8:printf("31 days in august");
+                break;
+        case 9:printf("30 days in september");
+                break;
+        case 10:printf("31 days in october");
+                break;
+        case 11:printf("30 days in november");
+                break;
+        case 12:printf("31 days in december");
+                break;
+        default: printf("invalid month values");
+    }
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("enter the number");
+    scanf("%d",&num);
+    switch(num%2==0)
+    {
+        case 0:
+        printf("%d is an odd number",num);
+        break;
+        case 1:
+        printf("%d is an even number",num);
+        break;
+    }
+}
+
+#include<stdio.h>
+int main()
+{
+   int a,b;
+   printf("enter two number");
+   scanf("%d%d",&a,&b);
+   switch(a>b)
+   {
+       case 0:
+       printf("%d is maximum",b);
+       break;
+       case 1:
+        printf("%d is maximum",a);
+       break;
+       
+   }
+}
+
+#include <stdio.h>
+int main()
+{
+    char ch;
+    printf("enter a alphabet");
+    scanf("%c",&ch);
+    switch(ch)
+    {
+    case'a':
+    case'e':
+    case'i':
+    case'o':
+    case'u':
+    case'A':
+    case'E':
+    case'I':
+    case'O':
+    case'U':
+    printf("%c is vowel",ch);
+    break;
+    default:
+    printf("%c is consonant",ch);
+    return 0;
+}
+}
+
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    printf("enter a number\n");
+    switch(n>0)
+    {
+        case 1:printf("no is positive");
+        break;
+        case 0:
+        switch(n<0)
+        {
+            case 1:printf("no is negative");
+            break;
+            case 0:printf("no is zero");
+            break;
+        }
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+    int a,b,ch;
+    printf("enter a first number");
+    scanf("%d",&a);
+    printf("enter your operation\n");
+    scanf("%d",&ch);
+    printf("enter a second number\n");
+    scanf("%d",&b);
+    switch(ch)
+    {
+        case 1:
+        printf("output%d",a+b);
+        break;
+        case 2:
+        printf("output%d",a-b);
+        break;
+        case 3:
+        printf("output%d",a*b);
+        break;
+        case 4:
+        printf("output%d",a/b);
+        break;
+        default:printf("invalid operation");
+        break;
+    }
+    return 0;
+}
+
+
+
+
+
+
+
